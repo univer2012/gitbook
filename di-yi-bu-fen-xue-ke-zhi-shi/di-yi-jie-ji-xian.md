@@ -38,19 +38,45 @@ $$x=\frac{-b \pm \sqrt{(b^2-4ac)} } {2a}$$
 开覆盖：$$S$$为数轴上的点集，$$H$$为开区间的集合，即$$H$$的每一个元素是形如$$(\alpha,\beta)$$的开区间。若$$S$$中任何一点都含有$$H$$中至少一个开区间内，则称$$H$$为$$S$$的一个开覆盖，或称$$H$$覆盖$$S$$。若$$H$$中开区间的个数是无限（有限）的，则称$$H$$为$$S$$的一个无限开覆盖（有限开覆盖）。
 
 ## （二）关于实数完备性的六个基本定理
+### 1.确界原理
+确界原理：设$$S$$为非空数集。若$$S$$有上界，则$$S$$必有上确界；若$$S$$有下界，则$$S$$必有下确界。
+
+### 2.单调有界定理
+单调有界定理：在实数系中，有界的单调数列必有极限。
+
+### 3.区间套定理
+区间套定理：若$$\{[a_n,b_n]\}$$是一个区间套，则在实数系中存在唯一的一点$$\xi$$，使得$$\xi \in [a_n,b_n],n=1,2,\cdots$$，即$$a_n\leqslant\xi b_n,n=1,2,\cdots$$。
+
+### 4.有限覆盖定理
+海涅-博雷尔（Heine-Borel）有限覆盖定理：设$$H$$为闭区间$$[a,b]$$的任一（无限）开覆盖，则从$$H$$中可选出有限个开区间来覆盖$$[a,b]$$。
+
+### 5.聚点定理
+魏尔斯特拉斯（Weierstrass）聚点定理：实轴上的任一有界无限点集$$S$$至少有一个聚点。
+
+### 6.柯西收敛准则
+柯西（Cauchy）收敛准则：数列$$\{a_n\}$$收敛的冲要条件是：对任一给定$$\varepsilon > 0$$，存在$$N > 0$$，使得当$$n,m > N$$时，有$$|a_n-a_m|< \varepsilon$$成立。
+
+# 二、极限
+## （一）极限的定义
+**定义1**：$$\lim_{n\rightarrow\infty}x_n=A：\forall\varepsilon > 0，\exists$$正整数$$N$$，当$$n > N$$时，有$$|x_n-A| < \varepsilon$$。
+若$$x_n$$存在极限（有限数），又称$$\{x_n\}$$收敛，否则称$$\{x_n\}$$发散。
+
+**定义2**：$$\lim_{x\rightarrow\infty}f(x)=A：\forall\varepsilon > 0，\exists$$正整数$$X$$，当$$|x| > X$$时，有$$|f(x)-A| < \varepsilon$$。
+类似可定义：$$\lim_{x\rightarrow +\infty}f(x)=A，\lim_{x\rightarrow -\infty}f(x)=A$$。
+
+**定义3**：$$\lim_{x\rightarrow x_0}f(x)=A：\forall\varepsilon > 0，\exists$$正整数$$\delta$$，当$$0 < |x-x_0| > \delta$$时，有$$|f(x)-A| < \varepsilon$$。
+类似可定义$$f(x)$$当$$x \rightarrow x_0$$时右极限与左极限：
+
+$$f(x_0+0) = \lim_{x\rightarrow x_0}f(x) = A，f(x_0-0) = \lim_{x\rightarrow x_0}f(x) = A$$。
 
 
 
 
 
-d
 
 
 
-
-
-
-
+dd
 
 
 
