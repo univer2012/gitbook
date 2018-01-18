@@ -66,15 +66,41 @@ $$x=\frac{-b \pm \sqrt{(b^2-4ac)} } {2a}$$
 
 **定义3**：$$\lim_{x\rightarrow x_0}f(x)=A：\forall\varepsilon > 0，\exists$$正整数$$\delta$$，当$$0 < |x-x_0| > \delta$$时，有$$|f(x)-A| < \varepsilon$$。
 类似可定义$$f(x)$$当$$x \rightarrow x_0$$时右极限与左极限：
-
 $$f(x_0+0) = \lim_{x\rightarrow x_0}f(x) = A，f(x_0-0) = \lim_{x\rightarrow x_0}f(x) = A$$。
 
 
+## （二）极限的基本性质与两个重要极限
+### 1.数列极限的基本性质
+**性质1：（极限的不等式性质）**设$$\lim_{n\rightarrow+\infty}x_n = a，lim_{n\rightarrow+\infty}y_n = b$$，若$$a > b$$，则$$\exists N$$，当$$n > N$$时，$$x_n > y_n$$；若$$n > N$$时，$$x_n \geqslant y_n$$，则$$a \geqslant b$$。
+**性质2：（收敛数列的有界性）**设$$x_n$$收敛，则$$x_n$$有界（即$$\exists$$常数$$M > 0,|x_n|\geqslant M,n=1,2,\cdots$$）。
+
+
+### 2.函数极限的基本性质
+**性质1：（极限的不等式性质）**设$$\lim_{x\rightarrow x_0}f(x) = A，\lim_{x\rightarrow x_0}g(x) = B$$，
+若$$A > B$$，则$$\exists \delta$$，当$$0< |x-x_0|< \delta$$时，$$f(x)>g(x)$$；
+若$$f(x) \geqslant g(x)$$（$$0 < |x-x_0| < \delta$$），则$$A \geqslant B$$。
+**【推论】（极限的局部保号性）**设$$\lim_{x\rightarrow x_0}f(x) = A$$，则$$f(x)$$在$$x_0$$的某空心邻域$$ U_0(x_0, \delta) = |x| 0< |x-x_0| < \delta|$$内有界，即$$\exists \delta > 0,M > 0$$，使得$$0 < |x-x_0| < \delta$$时，$$|f(x)|\leqslant M$$。
 
 
 
+### 3.两个重要极限
+$$\lim_{x\rightarrow 0}\frac{\sin x}{x} = 1，\lim_{x\rightarrow 0}(1+ \frac 1x)^x = e $$
+$$(\lim_{x\rightarrow 0}(1+x)^{\frac 1x} = e，\lim_{x\rightarrow 0}\frac{\ln(1+x)}{x} = 1 )$$
 
+## （三）求极限的方法
+求极限的方法很多，一下结合立体介绍几种常用的、简单的求极限的方法。
+### 1.利用变量替换法与两个重要极限
 
+### 2.利用灯姐无穷小因子替换
+若$$x\rightarrow a$$时，无穷$$小\alpha (x)~\alpha^*(x)$$，$$\beta  (x)~\beta^*(x)，（即\lim_{x\rightarrow a} \frac{\alpha(x)}{\alpha^*(x)} = 1，\lim_{x\rightarrow a}\frac{\beta(x)}{\beta^*(x)} = 1$$），则$$\lim_{x\rightarrow a}\frac{\alpha(x)u(x)}{\beta(x)v(x)} = \lim_{x\rightarrow a}\frac{\alpha^*(x)u(x)}{\beta^*(x)v(x)}。$$
+（等式两边其中之一极限存在或为$$\infty$$，则另一边也是且相等。）
+
+### 3.利用洛必达法则
+
+### 4.分别求左右极限的函数极限
+
+### 5.利用夹逼法
+用夹逼定理求极限$$\lim_{n\rightarrow \infty}x_n$$，就是要将数列$$\{x_n\}$$放大与缩小成：$$z_n \geqslant x_n \geqslant y_n$$，要想成功，必须是极限$$\lim_{n\rightarrow \infty}y_n$$与$$\lim_{n\rightarrow \infty} z_n$$会求且相等。
 
 dd
 
